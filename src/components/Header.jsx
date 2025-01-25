@@ -1,7 +1,10 @@
+
+
 export default function Header(){
     return(
         <header>
-            <h1>Header here</h1>
+            <img src="./assets/chef-claude-icon.png" alt="icon"/>
+            <h1>Chef Claude</h1>
         </header>
     )
 }
