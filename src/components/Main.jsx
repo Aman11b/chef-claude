@@ -36,7 +36,7 @@ export default function Main(){
                     Add Ingredient
                 </button>
             </form>
-            <section className="container_section">
+            {ingredients.length > 0  && <section className="container_section">
                 <h2>Ingredients on hand</h2>
                 <ul
                     className="ingredient-list"
@@ -44,17 +44,17 @@ export default function Main(){
                 >
                     {ingredientListItems}
                 </ul>
-                <div
+                { ingredients.length > 3 && <div
                     className="get-recipe-container"
                 >
-                    <div>
+                    <div className="button_div">
                         <h3>Ready for a recipe?</h3>
                         <p>Generate a recipe from you list of ingredients.</p>
                     </div>
                     <button>Get a recipe</button>
 
-                </div>
-            </section>
+                </div>}
+            </section>}
         </main>
     )
 }

@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* outline: 1px solid red; */
 }
 body{
   font-family: "Roboto Condensed", serif;
@@ -32,7 +34,7 @@ header>h1{
 }
 
 main{
-  padding: 50px 150px;
+  padding:10px;
 }
 
 .add-ingredient-form{
@@ -75,8 +77,7 @@ main{
 }
 
 ul.ingredient-list{
-  margin-bottom: 48px;
-  margin-top: 10px;
+  margin: 8px 0;
 }
 
 
@@ -86,7 +87,14 @@ ul.ingredient-list >li{
 }
 
 .container_section{
-  padding: 16px 48px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-self: center;
+  align-self: center;
+
 }
 
 .get-recipe-container{
@@ -96,15 +104,23 @@ ul.ingredient-list >li{
 
   border-radius: 8px;
   background: #f0efeb;
-  padding: 12px 34px;
+  padding: 17px 34px;
 
+  width: 500px;
 
+}
+
+.button_div *{
+  display: flex;
+
+  align-self: center;
 }
 
 .get-recipe-container h3{
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 28px;
+
 }
 
 .get-recipe-container p{
