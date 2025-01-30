@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Main(){
 
-    const [ingredients,setIngredients]=React.useState(["cabbage","onion",'garlic'])
+    const [ingredients,setIngredients]=React.useState([])
 
     const ingredientListItems=ingredients.map(ingredient=>(
         <li key={ingredient}>
@@ -22,8 +22,9 @@ export default function Main(){
     return (
         <main>
             <form 
-                className="add-ingredient-form"
                 onSubmit={handleSubmit}
+                className="add-ingredient-form"
+                
             >
                 <input 
                     aria-label="add ingredient"
@@ -35,9 +36,25 @@ export default function Main(){
                     Add Ingredient
                 </button>
             </form>
-            <ul>
-                {ingredientListItems}
-            </ul>
+            <section className="container_section">
+                <h2>Ingredients on hand</h2>
+                <ul
+                    className="ingredient-list"
+                    aria-live="polite"
+                >
+                    {ingredientListItems}
+                </ul>
+                <div
+                    className="get-recipe-container"
+                >
+                    <div>
+                        <h3>Ready for a recipe?</h3>
+                        <p>Generate a recipe from you list of ingredients.</p>
+                    </div>
+                    <button>Get a recipe</button>
+
+                </div>
+            </section>
         </main>
     )
 }

@@ -32,7 +32,7 @@ header>h1{
 }
 
 main{
-  padding:  40px 35px;
+  padding: 50px 150px;
 }
 
 .add-ingredient-form{
@@ -40,18 +40,18 @@ main{
   justify-content: center;
   /* align-items: center; */
   gap: 25px;
-  height: 38px;
+  height: 48px;
 }
 
 .add-ingredient-form >input{
   border-radius: 6px;
   border: 1px solid #d1d5db;
-  padding:  10px 15px;
+  padding:  18px 18px;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0.05);
 
   flex-grow: 1;
-  min-width: 150px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 450px;
 }
 
 .add-ingredient-form >button {
@@ -62,8 +62,8 @@ main{
   background-color: #141413;
   color: #fafaf8;
 
-  width: 150px;
-  font-size: 1rem;
+  width: 158px;
+  font-size: 1.2rem;
 
   font-weight: 500;;
 
@@ -71,5 +71,59 @@ main{
 
 .add-ingredient-form >button::before{
   content: "+";
-  margin: 5px;
+  margin: 7px;
+}
+
+ul.ingredient-list{
+  margin-bottom: 48px;
+  margin-top: 10px;
+}
+
+
+ul.ingredient-list >li{
+  color: #475467;
+  line-height: 28px;
+}
+
+.container_section{
+  padding: 16px 48px;
+}
+
+.get-recipe-container{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  border-radius: 8px;
+  background: #f0efeb;
+  padding: 12px 34px;
+
+
+}
+
+.get-recipe-container h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.get-recipe-container p{
+  color: #6b7280;
+  font-size: 0.8rem;
+  line-height: 24px;
+}
+
+.get-recipe-container button{
+  border:  none;
+  border-radius: 8px;
+  background: #d17557;
+
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+  color: #fafaf8;
+
+  padding: 10px 18px;
+  font-family: "Roboto Condensed", serif;
+
+  font-size: 1rem;
+  cursor: pointer;
 }
