@@ -143,3 +143,16 @@ ul.ingredient-list >li{
   font-size: 1rem;
   cursor: pointer;
 }
+
+.suggested-recipe-container {
+  color: #475467;
+  line-height: 28px;
+  font-size: 1.1rem;
+  font-weight: 400;
+
+  padding: 18px 38px;
+}
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li{
+  margin-top: 8px;
+}
