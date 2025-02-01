@@ -1,8 +1,38 @@
-# React + Vite
+# 🍽️ React Recipe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Preview  
+![Recipe App Preview](preview.png)
 
-Currently, two official plugins are available:
+## 📌 Introduction
+This is a **simple React application** that allows users to input a list of ingredients and receive a **possible recipe suggestion**.  
+While an **AI model** could be integrated to generate recipes, this project focuses **solely on learning React** concepts rather than AI integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## ✨ Features
+✅ Add ingredients to a list  
+✅ Display the list of added ingredients  
+✅ Conditionally show a recipe suggestion  
+✅ Toggle recipe visibility  
+
+---
+
+## 🚀 Concepts Learned
+Throughout building this project, I have learned and practiced the following **React concepts**:  
+🔹 **JSX and Component Structure**  
+🔹 **Props and State**  
+🔹 **Mapping over Arrays**  
+🔹 **Props vs State**  
+🔹 **`useState` Hook**  
+🔹 **Changing & Toggling State**  
+🔹 **Handling Complex State (Arrays & Objects)**  
+🔹 **React Forms & Event Handling**  
+🔹 **Conditional Rendering**  
+🔹 **Passing State as Props**  
+🔹 **Setting State from a Child Component**  
+🔹 **Local State vs Shared State**  
+
+---
+
+## 🎓 Acknowledgments  
+Special thanks to **Scrimba** and **Bob Ziroll** for their fantastic React course, which helped me gain a solid understanding of these concepts. 🙌
