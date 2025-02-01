@@ -1,6 +1,5 @@
 # 🍽️ React Recipe App
 
-## Preview  
 ![Recipe App Preview](preview.png)
 
 ## 📌 Introduction
