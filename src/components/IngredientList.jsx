@@ -19,7 +19,8 @@ export default function IngredientList(props){
                 {props.ingredients.length > 3 && <div
                     className="get-recipe-container"
                 >
-                    <div className="button_div">
+                    <div    className="button_div"
+                    ref={props.recipeSection}>
                         <h3>Ready for a recipe?</h3>
                         <p>Generate a recipe from you list of ingredients.</p>
                     </div>

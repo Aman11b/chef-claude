@@ -8,6 +8,8 @@ export default function Main(){
 
     const [recipeShown, setRecipeShown]=React.useState(false)
 
+    const recipeSection=React.useRef(null)
+
     function handleSubmit(event) {
         event.preventDefault()
 
@@ -21,6 +23,7 @@ export default function Main(){
     function toggleRecipeShown(){
         setRecipeShown(prevShow=>!prevShow)
     }
+
     return (
         <main>
             <form 
@@ -39,7 +42,8 @@ export default function Main(){
                 </button>
             </form>
             {ingredients.length > 0  &&  
-                <IngredientList 
+                <IngredientList
+                ref={recipeSection} 
                 ingredients={ingredients} 
                 toggleRecipeShown={toggleRecipeShown}
             />
